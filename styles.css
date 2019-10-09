@@ -1,5 +1,5 @@
 html, body {
-	height:100%;
+	height:100vh;
 	overflow:auto;
 	background-color: #212121;
 }
@@ -11,7 +11,7 @@ body {
 
 .form-div{
 	width: 80%;
-	height: 100vh;
+	height: 50%;
 	margin: auto auto;
 	
 	text-align: center;

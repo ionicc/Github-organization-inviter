@@ -7,15 +7,33 @@
     <script type="text/javascript" src="assets/materialize.js"></script>
 </head>
 <body>
-	<div class="form-div">
+	
+	<nav style="position: absolute; background-color: #222222;">
+	    <div class="nav-wrapper">
+	    	<a href="http://www.codezoned.com" class="brand-logo"><img src="assets/img/CZmainSmall.png" style="width: 12%; min-width: 150px;"></a>
+	    </div>
+	  </nav>
 
-		<form action="" name="" id="" class="join-form">
-			<label>Github Email:</label><br>
-			<input type="email" name="email" id="" class="inputs" placeholder="Enter your email here!"><br>
-			<label>Github Handle:</label><br>
-			<input type="text" name="handle" id="" class="inputs" placeholder="Enter your Github handle here!"><br>
-			<!--  -->
-			<input type="submit" name="submit" id="submit" class="button" value="Join Us!">
+	<div class="form-div" style="margin-top: 15%;">
+
+		<form action="" name="" id="" class="col s12">
+
+			<div class="row">
+		    	<div class="input-field col s12">
+		      		<input id="" type="text" name="email" class="validate">
+		      		<label for="Email">Github Email</label>
+		    	</div>
+		  	</div>
+
+		  	<div class="row">
+		    	<div class="input-field col s12">
+		      		<input id="" type="text" name="handle" class="validate">
+		      		<label for="Handle">Github Handle</label>
+		    	</div>
+		  	</div>
+
+		  	<button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+
 		</form>			
 
 	</div>
