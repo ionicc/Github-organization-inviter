@@ -1,6 +1,6 @@
 html, body {
 	height:100vh;
-	overflow:auto;
+	overflow: auto;
 	background-color: #212121;
 }
 
@@ -8,21 +8,41 @@ body {
     font-family: "Helvetica Neue",sans-serif;
     font-weight: lighter;
 }
+@font-face {
+  font-family: ProFontWindows;
+  src: url('assets/fonts/ProFontWindows/ProFontWindows.ttf');
+}
+@media(max-width: 450px){
 
+	.info-box{
+		margin-top: 7.5%; 
+		color: white; 
+		font-size: 1.4em; 
+	}
+
+	.form-div{
+		width: 80%;
+		height: 40%;
+		margin: auto auto;
+		margin-top: 5%;
+		text-align: center;
+
+	}
+
+
+}
+
+.info-box{
+	margin-top: 7.5%; 
+	color: white; 
+	font-size: 1.4em; 
+}
 .form-div{
-	width: 80%;
-	height: 50%;
+	height: 35%;
 	margin: auto auto;
-	
+	margin-top: 2.5%; 
+	width: 50%;
 	text-align: center;
-
-}
-
-.join-form{
-
-}
-
-.inputs{
 
 }
 
