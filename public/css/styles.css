@@ -10,7 +10,7 @@ body {
 }
 @font-face {
   font-family: ProFontWindows;
-  src: url('public/assets/fonts/ProFontWindows/ProFontWindows.ttf');
+  src: url('assets/fonts/ProFontWindows/ProFontWindows.ttf');
 }
 @media(max-width: 450px){
 
