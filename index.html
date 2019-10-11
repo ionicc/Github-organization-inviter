@@ -2,32 +2,67 @@
 <html>
 <head>
 	<title>Welcome to Codezoned! :D</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
-	<link rel="stylesheet" type="text/css" href="assets/materialize.css">
-    <script type="text/javascript" src="assets/materialize.js"></script>
+	<link rel="stylesheet" type="text/css" href="public/css/styles.css"/>
+	<link rel="stylesheet" type="text/css" href="public/assets/materialize.css">
+    <script type="text/javascript" src="public/assets/materialize.js"></script>
+    <script type="text/javascript" src="public/assets/js/jquery-3.4.1.min.js"></script>
+    <link rel="icon" href="public/assets/img/cz_signature.png">
+
+    <style>
+    	/* label color */
+	   	.input-field label {
+	     color: #eeeeee;
+	    }
+	    /* label focus color */
+	   .input-field input[type=text]:focus + label {
+	     color: #eeeeee;
+	    }
+	    /* label underline focus color */
+	    .input-field input[type=text]:focus {
+	     border-bottom: 1px solid #eeeeee;
+	     box-shadow: 0 1px 0 0 #eeeeee;
+	    }
+ 
+    </style>
+
 </head>
 <body>
 	
 	<nav style="position: absolute; background-color: #222222;">
 	    <div class="nav-wrapper">
-	    	<a href="http://www.codezoned.com" class="brand-logo"><img src="assets/img/CZmainSmall.png" style="width: 12%; min-width: 150px;"></a>
+	    	<a href="http://www.codezoned.com" class="brand-logo"><img src="public/assets/img/CZmainSmall.png" style="width: 12%; min-width: 150px;"></a>
 	    </div>
-	  </nav>
+	</nav>
 
-	<div class="form-div" style="margin-top: 15%;">
+	<div class="container info-box " style="margin-top: 10%;">
+		<div class="row" style="text-align: left; color: #eeeeee;">
+			<div class="col s12" style="text-align: center;">Hey there, Thanks for your interest in <span class="codezoned" style="color: #d32f2f;">code</span><span class="codezoned">zoned</span>.</div>
+			<div class="col s12" style="text-align: center;">We'd like you to do certain things before you register for our github org.</div>
+			<div class="col s3" style="text-align: right;">Step <span style="color: red; font-weight: 750">1</span>:</div>
+			<div class="col s9" style="text-align: left;">Fill up this Google form</div>
+			<div class="col s3" style="text-align: right;">Step <span style="color: red; font-weight: 750">2</span>:</div>
+			<div class="col s9" style="text-align: left;"> Register on talk.codezoned</div>
+			<div class="col s3" style="text-align: right;">Step <span style="color: red; font-weight: 750">3</span>:</div>	
+			<div class="col s9" style="text-align: left;">Join our Discord</div>
+			<div class="col s3" style="text-align: right;">Step <span style="color: red; font-weight: 750">4</span>:</div>
+			<div class="col s9" style="text-align: left;">Enter your GIthub handle and Github registered email</div>	
+		</div>
+	</div>
+
+	<div class="form-div" style="margin-top: 6%;">
 
 		<form action="input_data" method="post" class="col s12">
 
 			<div class="row">
 		    	<div class="input-field col s12">
-		      		<input id="" type="text" name="email" class="validate">
+		      		<input id="" type="text" name="email" class="validate" required style="color: #eeeeee;">
 		      		<label for="Email">Github Email</label>
 		    	</div>
 		  	</div>
 
 		  	<div class="row">
 		    	<div class="input-field col s12">
-		      		<input id="" type="text" name="handle" class="validate">
+		      		<input id="" type="text" name="handle" class="validate" required style="color: #eeeeee;">
 		      		<label for="Handle">Github Handle</label>
 		    	</div>
 		  	</div>
@@ -37,6 +72,46 @@
 		</form>			
 
 	</div>
+
+	<!-- Form Validation -->
+	<script>
+
+		$(document).ready(function() {
+
+			function validateEmail(sEmail){
+			   
+			   var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+			    if (filter.test(sEmail)) {
+			        return true;
+			    }
+			    else {
+			        return false;
+			    }
+			}​
+
+			$('#join-form').submit(function(e) {
+			    e.preventDefault();
+				var email = $('#email').val();
+			    var handle = $('#handle').val();
+
+			    if ($.trim(email).length == 0) {
+	            	alert('Please enter valid email address.');
+	            	e.preventDefault();
+		        }
+		        if (validateEmail(email)) {
+		            //alert('Email is valid');
+		        }
+		        else {
+		            alert('Invalid Email Address');
+		            e.preventDefault();
+		        }
+
+		    	if(handle.length<1){
+		    		alert("Enter a Valid Github Handle")
+		    	}
+			});
+		});
+	</script>
 
 </body>
 </html>
