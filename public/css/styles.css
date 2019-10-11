@@ -9,8 +9,8 @@ body {
     font-weight: lighter;
 }
 @font-face {
-  font-family: ProFontWindows;
-  src: url('assets/fonts/ProFontWindows/ProFontWindows.ttf');
+  font-family: "profontwindows";
+  src: url('public/assets/fonts/ProFontWindows/proFontWindows.ttf');
 }
 @media(max-width: 450px){
 
@@ -34,6 +34,12 @@ body {
 	color: white; 
 	font-size: 1.4em; 
 }
+
+.codezoned{
+	font-size: 120%; 
+	font-family: "profontwindows";
+}
+
 .form-div{
 	height: 35%;
 	margin: auto auto;

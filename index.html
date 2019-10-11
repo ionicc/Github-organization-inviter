@@ -4,8 +4,8 @@
 	<title>Welcome to Codezoned! :D</title>
 	<link rel="stylesheet" type="text/css" href="public/css/styles.css"/>
 	<link rel="stylesheet" type="text/css" href="public/assets/materialize.css">
-    <script type="text/javascript" src="public/assets/materialize.js"></script>
     <script type="text/javascript" src="public/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="public/assets/materialize.js"></script>
     <link rel="icon" href="public/assets/img/cz_signature.png">
 
     <style>
@@ -33,11 +33,11 @@
 	    <div class="nav-wrapper">
 	    	<a href="http://www.codezoned.com" class="brand-logo"><img src="public/assets/img/CZmainSmall.png" style="width: 12%; min-width: 150px;"></a>
 	    </div>
-	</nav><br><br><br><br><br>
+	  </nav>
 
-	<div class="container info-box " style="">
+	<div class="container info-box " style="margin-top: 7.25%;">
 		<div class="row" style="text-align: left; color: #eeeeee;">
-			<div class="col s12" style="text-align: center;">Hey there, Thanks for your interest in <span style="color: #d32f2f; font-size: 120%; font-family: 'ProFontWindows'">code</span><span style="font-family: 'ProFontWindows'; font-size: 120%;">zoned</span>.</div>
+			<div class="col s12" style="text-align: center;">Hey there, Thanks for your interest in <span class="codezoned" style="color: #d32f2f;">code</span><span class="codezoned">zoned</span>.</div>
 			<div class="col s12" style="text-align: center;">We'd like you to do certain things before you register for our github org.</div>
 			<div class="col s3" style="text-align: right;">Step <span style="color: red; font-weight: 750">1</span>:</div>
 			<div class="col s9" style="text-align: left;">Fill up this Google form</div>
@@ -50,29 +50,31 @@
 		</div>
 	</div>
 
-	<div class="form-div" style="text-align: center;">
-		
-	        <form action="" name="" id="join-form" class="col" style="margin: 5%; text-align: center;">
+	<div class="form-div" style="margin-top: 7.5%;">
+
+		<form action="input_data" method="post" class="col s12">
 
 			<div class="row">
-		    	<div class="input-field col s12" style="">
-		      		<input id="email" type="text" name="email" class="input-field" style="color: #eeeeee;">
+		    	<div class="input-field col s12">
+		      		<input id="" type="text" name="email" class="validate" required style="color: #eeeeee;">
 		      		<label for="Email">Github Email</label>
 		    	</div>
 		  	</div>
 
 		  	<div class="row">
 		    	<div class="input-field col s12">
-		      		<input id="handle" type="text" name="handle" class="input-field" style="color: #eeeeee;">
+		      		<input id="" type="text" name="handle" class="validate" required style="color: #eeeeee;">
 		      		<label for="Handle">Github Handle</label>
 		    	</div>
 		  	</div>
 
-		  	<button class="btn waves-effect waves-light grey lighten-3" type="submit" name="action" style="color: #222222; font-weight: 750;">Submit</button>
+		  	<button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
 
 		</form>			
-		
+
 	</div>
+
+	<!-- Form Validation -->
 	<script>
 		$(document).ready(function() {
 
@@ -108,11 +110,7 @@
 		    		alert("Enter a Valid Github Handle")
 		    	}
 			});
-
 		});
-
-			
-
 	</script>
 </body>
 </html>
