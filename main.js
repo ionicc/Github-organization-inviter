@@ -5,11 +5,19 @@ var http = require('http').Server(app);
 const Octokit = require('@octokit/rest');
 var bodyParser = require('body-parser');
 var expressIp = require('express-ip');
-// var ipv4 = constants.ipv4;
-// var fport = constants.port;
+
+/*
+------------------------------
+ENTER YOUR ORGANIZATION NAME
+AND
+ENTER YOUR GITHUB ACCESS TOKEN
+------------------------------
+*/
 
 const ORGANIZATION = "";
 const TOKEN = ""
+
+
 var PORT = 8000 || process.env.PORT;
 
 
@@ -43,11 +51,6 @@ app.post('/input_data',(req,res) => {
     res.send("Invitation sent to " + req.body.handle + " At : " + req.body.email);
 });
 
-/*
-var user = client.users.getByUsername({
-    username:"ionicc"
-}).then(console.log(user));
-*/
 
 http.listen(app.get('PORT'),function(){
     console.log('listening on : ' + app.get('PORT'));
