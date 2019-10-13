@@ -1,26 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome to Codezoned! :D</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+		
+  	<meta charset="UTF-8">
+	<title>Welcome to Codezoned! :D</title>	
+    <link rel="icon" href="assets/img/cz_signature.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Compiled jquery -->
+    <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/materialize.css">
     <script type="text/javascript" src="assets/materialize.js"></script>
-    <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
-    <link rel="icon" href="assets/img/cz_signature.png">
 
     <style>
+
     	/* label color */
 	   	.input-field label {
 	     color: #eeeeee;
 	    }
 	    /* label focus color */
-	   .input-field input[type=text]:focus + label {
-	     color: #eeeeee;
+	   .input-field input[type=text]:focus + label{
+	     color: #eeeeee !important;
+
 	    }
 	    /* label underline focus color */
-	    .input-field input[type=text]:focus {
-	     border-bottom: 1px solid #eeeeee;
-	     box-shadow: 0 1px 0 0 #eeeeee;
+	    .input-field input[type=text]:focus{
+	     border-bottom: 1px solid #eeeeee !important;
+	     box-shadow: 0 1px 0 0 #eeeeee !important;
+	    }
+
+	    .input-field input[type=email]:focus + label{
+	     color: #eeeeee !important;
+
+	    }
+	    /* label underline focus color */
+	    .input-field input[type=email]:focus{
+	     border-bottom: 1px solid #eeeeee !important;
+	     box-shadow: 0 1px 0 0 #eeeeee !important;
+	    }
+	    
+	    .material-icons{
+	    	color: #eeeeee !important;
+	    }
+
+	    .material-icons:focus{
+	    	color: #d32f2f !important;
+	    }
+	    .material-icons:hover{
+	    	color: #d32f2f !important;
+	    }
+	    .btn{
+	    	background-color: #eeeeee;
+	    	color: #212121;
+	    	font-size: 1em;
+	    	font-weight: 500;
 	    }
  
     </style>
@@ -32,38 +70,41 @@
 	    <div class="nav-wrapper">
 	    	<a href="http://www.codezoned.com" class="brand-logo"><img src="assets/img/CZmainSmall.png" style="width: 12%; min-width: 150px;"></a>
 	    </div>
-	</nav>
+	</nav><br><br><br><br>
 
-	<div class="container info-box " style="margin-top: 10%;">
+	<div class="container info-box" style="margin-top: 5%;">
 		<div class="row" style="text-align: left; color: #eeeeee;">
 			<div class="col s12" style="text-align: center;">Hey there, Thanks for your interest in <span class="codezoned" style="color: #d32f2f;">code</span><span class="codezoned">zoned</span>.</div>
 			<div class="col s12" style="text-align: center;">We'd like you to do certain things before you register for our github org.</div>
-			<div class="col s3" style="text-align: right;">Step <span style="color: red; font-weight: 750">1</span>:</div>
-			<div class="col s9" style="text-align: left;">Fill up this Google form</div>
-			<div class="col s3" style="text-align: right;">Step <span style="color: red; font-weight: 750">2</span>:</div>
-			<div class="col s9" style="text-align: left;"> Register on talk.codezoned</div>
-			<div class="col s3" style="text-align: right;">Step <span style="color: red; font-weight: 750">3</span>:</div>	
-			<div class="col s9" style="text-align: left;">Join our Discord</div>
-			<div class="col s3" style="text-align: right;">Step <span style="color: red; font-weight: 750">4</span>:</div>
-			<div class="col s9" style="text-align: left;">Enter your GIthub handle and Github registered email</div>	
+			<div class="col s4" style="text-align: right;">Step <span style="color: #d32f2f; font-weight: 750">1</span>:</div>
+			<div class="col s8" style="text-align: left;">Fill up this Google form</div>
+			<div class="col s4" style="text-align: right;">Step <span style="color: #d32f2f; font-weight: 750">2</span>:</div>
+			<div class="col s8" style="text-align: left;"> Register on <a href="http://talk.codezoned.com" target="_blank" style="color: #d32f2f;">talk.codezoned</a></div>
+			<div class="col s4" style="text-align: right;">Step <span style="color: #d32f2f; font-weight: 750">3</span>:</div>	
+			<div class="col s8" style="text-align: left;">Join our <a href="https://discord.gg/6j62WpU" target="_blank" style="color: #d32f2f;">Discord</a></div>
+			<div class="col s4" style="text-align: right;">Step <span style="color: #d32f2f; font-weight: 750">4</span>:</div>
+			<div class="col s8" style="text-align: left;">Enter your Github handle and Github registered email</div>
+			<!-- <div class="col s12" style="text-align: center; color: #101010; font-size: 10px;">P.S. There are links in there ;)</div>	 -->
 		</div>
 	</div>
 
-	<div class="form-div" style="margin-top: 6%;">
+	<div class="form-div" style="margin-top: 2.5%;">
 
 		<form action="input_data" method="post" class="col s12">
 
 			<div class="row">
 		    	<div class="input-field col s12">
-		      		<input id="" type="text" name="email" class="validate" required style="color: #eeeeee;">
-		      		<label for="Email">Github Email</label>
+		    		<i class="material-icons prefix" id="icon1">email</i>
+		      		<input id="email" type="email" name="email" class="validate" required style="color: #eeeeee;">
+		      		<label for="email">Github Email</label>
 		    	</div>
 		  	</div>
 
 		  	<div class="row">
 		    	<div class="input-field col s12">
-		      		<input id="" type="text" name="handle" class="validate" required style="color: #eeeeee;">
-		      		<label for="Handle">Github Handle</label>
+		    		<i class="material-icons prefix" id="icon2">person</i>
+		      		<input id="handle" type="text" name="handle" class="validate" required style="color: #eeeeee;">
+		      		<label for="handle">Github Handle</label>
 		    	</div>
 		  	</div>
 
@@ -72,6 +113,7 @@
 		</form>			
 
 	</div>
+
 
 	<!-- Form Validation -->
 	<script>
@@ -88,6 +130,24 @@
 			        return false;
 			    }
 			}​
+
+			$(function() {
+				$('#email').hover(function() {
+			    	$('#icon1').css('color', '#d32f2f');
+			    }, function() {
+			    // on mouseout, reset the background colour
+			    $('#icon1').css('color', '#eeeeee;');
+			  	});
+			});
+
+			$(function() {
+				$('#handle').hover(function() {
+			    	$('#icon2').css('color', '#d32f2f');
+			    }, function() {
+			    // on mouseout, reset the background colour
+			    $('#icon2').css('color', '#eeeeee;');
+			  	});
+			});
 
 			$('#join-form').submit(function(e) {
 			    e.preventDefault();
