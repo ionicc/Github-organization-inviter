@@ -36,6 +36,9 @@ body {
 
 @media(max-width: 750px){
 
+	.nav-wrapper{
+		 text-align: center !important;
+	}
 	.info-box{
 		margin-top: 15%
 		color: white; 
