@@ -43,12 +43,31 @@ var client = Octokit({
 
 app.post('/input_data',(req,res) => {
     if(req.body.handle == "") res.redirect('back'); 
-    var invStatus = client.orgs.createInvitation({
-        org: ORGANIZATION,
-        email: req.body.email
-    });
-    console.log("Invitation sent to " + req.body.handle + " At : " + req.body.email);
-    res.send("Invitation sent to " + req.body.handle + " At : " + req.body.email);
+    client.users
+        .getByUsername({
+            username: req.body.handle
+        })
+        .then((userdata) => {
+            var invStatus = client.orgs
+                .createInvitation({
+                    org: ORGANIZATION,
+                    email: req.body.email
+                })
+                .then((invitationData) => {
+                    console.log(invitationData);
+                    console.log("Invitation sent to " + req.body.handle + " At : " + req.body.email);
+                    res.send("Invitation sent to " + req.body.handle + " At : " + req.body.email);
+                })
+                .catch((error) => {
+                    console.log('Invitation failed %o', error)
+                    res.redirect('back')
+                })
+	        console.log(userdata)
+        })
+        .catch((error) => {
+            console.log("User not found", error)
+            res.redirect('back')
+        });
 });
 
 
