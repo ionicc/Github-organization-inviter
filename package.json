@@ -1,0 +1,28 @@
+{
+  "name": "github-organization-inviter",
+  "version": "1.0.0",
+  "description": "**Automate the addition of users to your organization** by hosting a web-app to allow people to click and recieve invitation to your Github Organization.",
+  "main": "main.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express-ip": "^1.0.3",
+    "express": "^4.17.1",
+    "update": "^0.7.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r dotenv/config main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ionicc/Github-organization-inviter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ionicc/Github-organization-inviter/issues"
+  },
+  "homepage": "https://github.com/ionicc/Github-organization-inviter#readme"
+}
