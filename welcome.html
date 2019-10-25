@@ -60,7 +60,39 @@
 	    	font-size: 1em;
 	    	font-weight: 500;
 	    }
- 
+
+	    /*WELCOME>HTML*/
+	    .welcome{
+	    	text-align: center;
+	    	color: #e0e0e0;
+	    	margin: 2%;
+	    }
+		.welcomeh1{
+			font-size: 5.2em;
+		}
+
+		.welcomep1{
+			font-size: 3.25em;
+		}
+		.welcomep2{
+			font-size: 2.25em;
+		}
+
+		@media(max-width: 850px){
+			.welcomeh1{
+				font-size: 3.5em;
+			}
+
+			.welcomep1{
+				margin: 1%;
+				font-size: 2.5em;
+			}
+
+		.welcomep2{
+			font-size: 1.75em;
+		}
+		}
+
     </style>
 
 </head>
@@ -73,11 +105,13 @@
 	</nav><br><br><br>
 
 	<div class="container info-box" style="margin-top: 5%;">
-		<div class="row" style="text-align: center; color: #e0e0e0;">
+		<div class="row welcome">
 		
-			<h1 class="welcomeh1" style="font-size: 5em;">Hey There! 😃</h1>
+			<h1 class="welcomeh1" style="">Hey There! 😃</h1>
 			
-			<p class="welcomep" style="font-size: 3.5em;">If you've entered the correct email and handle, look into your mail.</p>
+			<p class="welcomep1" style="">If you've entered the correct email and handle, look into your mail.</p>
+			<p class="welcomep2" style="">Have an amazing time and marvel at the beauty that Open Source is!</p>
+
 		</div>
 	</div>
 
