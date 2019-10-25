@@ -6,17 +6,10 @@ const Octokit = require('@octokit/rest');
 var bodyParser = require('body-parser');
 var expressIp = require('express-ip');
 
-/*
-------------------------------
-ENTER YOUR ORGANIZATION NAME
-AND
-ENTER YOUR GITHUB ACCESS TOKEN
-------------------------------
-*/
-
-const ORGANIZATION = '';
-const TOKEN = ''
-
+// Remember to add ".env" to ".gitignore" before
+// pushing to your own repository !!
+const ORGANIZATION = process.env.ORGANIZATION;
+const TOKEN = process.env.TOKEN;
 
 var PORT = 8000 || process.env.PORT;
 
