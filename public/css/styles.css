@@ -1,6 +1,6 @@
 html, body {
 	height:100vh;
-	overflow:auto;
+	overflow: auto;
 	background-color: #212121;
 }
 
@@ -8,22 +8,69 @@ body {
     font-family: "Helvetica Neue",sans-serif;
     font-weight: lighter;
 }
+@font-face {
+  font-family: "profontwindows";
+  src: url('../assets/fonts/ProFontWindows/ProFontWindows.ttf');
+}
+
+
+.info-box{
+	margin-top: 15% 
+	color: white; 
+	font-size: 1.4em; 
+}
+
+.codezoned{
+	font-size: 120%; 
+	font-family: "profontwindows";
+}
 
 .form-div{
-	width: 80%;
-	height: 50%;
+	height: 32.5%;
 	margin: auto auto;
-	
+	margin-top: 2.5%; 
+	width: 50%;
 	text-align: center;
 
 }
 
-.join-form{
+@media(max-width: 750px){
 
+	.nav-wrapper{
+		 text-align: center !important;
+	}
+	.info-box{
+		margin-top: 15%
+		color: white; 
+		font-size: 1.4em; 
+	}
+
+	.form-div{
+		width: 80%;
+		height: 50%;
+		margin: auto auto;
+		margin-top: 5%;
+		text-align: center;
+	}
 }
 
-.inputs{
+/*WELCOME>HTML*/
 
+.welcomeh1{
+	font-size: 5.2em;
 }
 
+.welcomep{
+	font-size: 3.25em;
+}
+
+@media(max-width: 750px){
+	.welcomeh1{
+		font-size: 2.2em;
+	}
+
+	.welcomep{
+		font-size: 1.25em;
+	}
+}
 

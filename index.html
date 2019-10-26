@@ -1,10 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome to Codezoned! :D</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+		
+  	<meta charset="UTF-8">
+	<title>Welcome to Codezoned! 😃</title>	
+    <link rel="icon" href="assets/img/cz_signature.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Compiled jquery -->
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/materialize.css">
     <script type="text/javascript" src="assets/materialize.js"></script>
+
+    <style>
+
+    	/* label color */
+	   	.input-field label {
+	     color: #e0e0e0;
+	    }
+	    /* label focus color */
+	   .input-field input[type=text]:focus + label{
+	     color: #e0e0e0 !important;
+
+	    }
+	    /* label underline focus color */
+	    .input-field input[type=text]:focus{
+	     border-bottom: 1px solid #e0e0e0 !important;
+	     box-shadow: 0 1px 0 0 #e0e0e0 !important;
+	    }
+
+	    .input-field input[type=email]:focus + label{
+	     color: #e0e0e0 !important;
+
+	    }
+	    /* label underline focus color */
+	    .input-field input[type=email]:focus{
+	     border-bottom: 1px solid #e0e0e0 !important;
+	     box-shadow: 0 1px 0 0 #e0e0e0 !important;
+	    }
+	    
+	    .material-icons{
+	    	color: #e0e0e0 !important;
+	    }
+
+	    .material-icons:focus{
+	    	color: #d32f2f !important;
+	    }
+	    .material-icons:hover{
+	    	color: #d32f2f !important;
+	    }
+	    .btn{
+	    	background-color: #e0e0e0;
+	    	color: #212121;
+	    	font-size: 1em;
+	    	font-weight: 500;
+	    }
+ 
+    </style>
+
 </head>
 <body>
 	
@@ -12,31 +70,113 @@
 	    <div class="nav-wrapper">
 	    	<a href="http://www.codezoned.com" class="brand-logo"><img src="assets/img/CZmainSmall.png" style="width: 12%; min-width: 150px;"></a>
 	    </div>
-	  </nav>
+	</nav><br><br><br>
 
-	<div class="form-div" style="margin-top: 15%;">
+	<div class="container info-box" style="margin-top: 5%;">
+		<div class="row" style="text-align: left; color: #e0e0e0;">
+			<div class="col s12" style="text-align: center;">Hey there, Thanks for your interest in <span class="codezoned" style="color: white;">Codezoned;</span></div>
+			<div class="col s12" style="text-align: center; margin-bottom: 2%;">We need you to do a couple of things to get you in as an actual member :)</div>
+			<div class="col s4" style="text-align: right;">Step <span style="color: #d32f2f; font-weight: 750">1</span>:</div>
+			<div class="col s8" style="text-align: left;">Fill up this <a href="https://docs.google.com/forms/d/e/1FAIpQLScu0pGSZEbz1TcHwTr4BH0VnQWiPwTnIKLqrn0G3JLiaeKaRQ/viewform"  target="_blank" style="color: #d32f2f;"> Google form</a></div>
+			<div class="col s4"></div>
+			<div class="col s8" style="text-align: left; margin-bottom: 1.5%; font-size: 16px;">Your details would really help us to connect and talk to you in future. They're safe with us tho 🤐</div><br>
+			<div class="col s4" style="text-align: right;">Step <span style="color: #d32f2f; font-weight: 750">2</span>:</div>
+			<div class="col s8" style="text-align: left;"> Register on <a href="http://talk.codezoned.com" target="_blank" style="color: #d32f2f;">talk.codezoned</a></div>
+			<div class="col s4"></div>
+			<div class="col s8" style="text-align: left; margin-bottom: 1.5%; font-size: 16px;">Our forum would be more heavenly with you 😇</div><br>
+			<div class="col s4" style="text-align: right;">Step <span style="color: #d32f2f; font-weight: 750">3</span>:</div>	
+			<div class="col s8" style="text-align: left;">Join our <a href="https://discord.gg/6j62WpU" target="_blank" style="color: #d32f2f;">Discord</a></div><br><br>
+			<!-- <div class="col s3"></div> -->
+			<div class="col s12" style=" margin-bottom: 1%; color: #bdbdbd; margin-top: 2%; font-size: 1.1em; text-align: center;">Great! Thanks for going through this with us. Now, we'd like to invite you to our Github organization. Go on and enter your Github handle and Github email. You can expect an invitation soon! 😃</div> <br>
+		
+			<!-- <div class="col s12" style="text-align: center; color: #101010; font-size: 10px;">P.S. There are links in there ;)</div>	 -->
+		</div>
+	</div>
 
-		<form action="" name="" id="" class="col s12">
+	<div class="form-div" style="margin-top: 2%; margin-bottom: 1.5%;">
+
+		<form action="input_data" method="post" class="col s12">
 
 			<div class="row">
-		    	<div class="input-field col s12">
-		      		<input id="" type="text" name="email" class="validate">
-		      		<label for="Email">Github Email</label>
+		    	<div class="input-field col s12" style="margin-bottom: -2%;">
+		    		<i class="material-icons prefix" id="icon1">email</i>
+		      		<input id="email" type="email" name="email" class="validate" required style="color: #e0e0e0;">
+		      		<label for="email">Github Email</label>
 		    	</div>
 		  	</div>
 
 		  	<div class="row">
 		    	<div class="input-field col s12">
-		      		<input id="" type="text" name="handle" class="validate">
-		      		<label for="Handle">Github Handle</label>
+		    		<i class="material-icons prefix" id="icon2">person</i>
+		      		<input id="handle" type="text" name="handle" class="validate" required style="color: #e0e0e0;">
+		      		<label for="handle">Github Handle</label>
 		    	</div>
 		  	</div>
 
-		  	<button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+		  	<button class="btn waves-effect waves-light" type="submit" name="action"><a href="welcome.html" target="_blank" style="color: #222222;;"> Submit</a></button>
 
 		</form>			
 
 	</div>
+
+
+	<!-- Form Validation -->
+	<script>
+
+		$(document).ready(function() {
+
+			function validateEmail(sEmail){
+			   
+			   var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+			    if (filter.test(sEmail)) {
+			        return true;
+			    }
+			    else {
+			        return false;
+			    }
+			}​
+
+			$(function() {
+				$('#email').hover(function() {
+			    	$('#icon1').css('color', '#d32f2f');
+			    }, function() {
+			    // on mouseout, reset the background colour
+			    $('#icon1').css('color', '#e0e0e0;');
+			  	});
+			});
+
+			$(function() {
+				$('#handle').hover(function() {
+			    	$('#icon2').css('color', '#d32f2f');
+			    }, function() {
+			    // on mouseout, reset the background colour
+			    $('#icon2').css('color', '#e0e0e0;');
+			  	});
+			});
+
+			$('#join-form').submit(function(e) {
+			    e.preventDefault();
+				var email = $('#email').val();
+			    var handle = $('#handle').val();
+
+			    if ($.trim(email).length == 0) {
+	            	alert('Please enter valid email address.');
+	            	e.preventDefault();
+		        }
+		        if (validateEmail(email)) {
+		            //alert('Email is valid');
+		        }
+		        else {
+		            alert('Invalid Email Address');
+		            e.preventDefault();
+		        }
+
+		    	if(handle.length<1){
+		    		alert("Enter a Valid Github Handle")
+		    	}
+			});
+		});
+	</script>
 
 </body>
 </html>
