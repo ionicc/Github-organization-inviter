@@ -17,3 +17,9 @@
 Yes! This is being used in [join.codezoned.com](http://join.codezoned.com/).
 
 **Make sure to read on Github access rate limit before deploying this app.**
+
+## Can I use this?
+
+Absolutely! Just sneak the credits in somewhere :smile:. 
+
+Have fun making processes automate in your org or event!
