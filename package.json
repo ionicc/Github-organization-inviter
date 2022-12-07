@@ -4,10 +4,10 @@
   "description": "**Automate the addition of users to your organization** by hosting a web-app to allow people to click and recieve invitation to your Github Organization.",
   "main": "main.js",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "dotenv": "^8.2.0",
     "express-ip": "^1.0.3",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "update": "^0.7.4"
   },
   "devDependencies": {},
